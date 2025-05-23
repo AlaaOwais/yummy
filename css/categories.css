@@ -1,0 +1,26 @@
+.details
+{
+    /* width: 75%; */
+    margin-inline: auto;
+    color: var(--black);
+    background-color: rgba(255, 255, 255, 0.692);
+    border-radius: 10px;
+    position: absolute;
+    top: 0;
+    right: 0;
+    left: 0;
+    bottom: 0;
+    transform: translateY(105%);
+    padding: 10px 15px;
+    transition: transform .5s;
+    text-align: center;
+
+}
+img.image
+{
+    border-radius: 10px;
+}
+div.category-contant:hover .details
+{
+    transform: translateY(0%);
+}

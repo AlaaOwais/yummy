@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yommy</title>
+    <link rel="icon" href="./images/logo.png">
+    <link href="node_modules/bootstrap/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="./font/all.min.css" rel="stylesheet">
+    <link href="./css/main.css" rel="stylesheet">
+    <link href="./css/categories.css" rel="stylesheet">
+</head>
+<body class=" bg-black">
+    <aside class="position-fixed d-flex flex-column text-center  justify-content-between">
+        <div class="aside-links text-white bg-black position-fixed top-0 bottom-0 d-flex flex-column justify-content-between py-4 ">
+            <div class="links">
+                <ul class="list-link text-white list-unstyled overflow-hidden">
+                    <li onclick="showSearchInputs(); " class="element-list py-2 position-relative" >Search</li>
+                    <li onclick="displayCategory() " class="element-list py-2 position-relative" >Categories</li>
+                    <li onclick="getArea(); " class="element-list py-2 position-relative" >Area</li>
+                    <li onclick="getIngredients(); " class="element-list py-2 position-relative" >Ingredients</li>
+                    <li onclick="showContacts(); " class="element-list py-2 position-relative" >Contact Us</li>
+                </ul>
+            </div>
+            <div class="aside-footer">
+                <div class="icons">
+                    <i class="fa-brands fa-facebook"></i>
+                    <i class="fa-brands fa-twitter"></i>
+                    <i class="fa-solid fa-globe"></i>
+                </div>
+                <div class="footer">
+                    <p>Copyright Â© 2019 All Rights <br>Reserved.</p>
+                </div>
+            </div>
+        </div>
+        <img src="./images/logo.png" class="w-100 py-4 px-2 " alt="logo">
+    <button class="aside-btn border-0 bg-white">
+        <i class="bar-icon fa-solid fa-bars py-4 px-2 display-6 "></i>
+    </button>
+        <div class="aside-icons py-4 px-2 fs-5 ">
+            <i class="fa-solid fa-globe d-block mx-auto"></i>
+            <i class="fa-solid fa-share-nodes"></i>
+        </div>
+    </aside>
+    <div id="loader" class="loader d-flex justify-content-center align-items-center vh-100">
+        <img src="./images/Spinner@1x-1.0s-200px-200px.gif" alt="loading">
+    </div>
+    <main class="text-white">
+    </main>
+    <div id="container"></div>
+    <div id="contant"></div>
+    
+    <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="./font/all.min.js"></script>
+    <script src="./js/main.js"></script>
+</body>
+</html>
