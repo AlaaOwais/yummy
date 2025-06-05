@@ -1,7 +1,7 @@
-let sidebar = document.querySelector(".aside-btn");
-let aside = document.querySelector("aside");
-let closeIcon = document.querySelector(".bar-main-icon");
-let elementsList = document.getElementsByClassName("element-list");
+const sidebar = document.querySelector(".aside-btn");
+const aside = document.querySelector("aside");
+const closeIcon = document.querySelector(".bar-main-icon");
+const elementsList = document.getElementsByClassName("element-list");
 sidebar.addEventListener("click", function () {
     aside.classList.toggle('collapsed-aside');
     closeIcon.classList.toggle("fa-bars");
@@ -11,7 +11,7 @@ sidebar.addEventListener("click", function () {
         elementsList[i].classList.toggle("moving_down");
     }
 })
-let main = document.querySelector("main")
+const main = document.querySelector("main")
 main.addEventListener('click', function(){
     aside.classList.remove('collapsed-aside');
     closeIcon.classList.remove("fa-xmark");
@@ -48,8 +48,8 @@ window.addEventListener("load", function(){
     homePage();
     loader.classList.add('d-none')
 }) 
-let container = document.querySelector("#container")
-let contant = document.querySelector('div#contant')
+const container = document.querySelector("#container")
+const contant = document.querySelector('div#contant')
 function showSearchInputs()
 {
     main.innerHTML = ``
