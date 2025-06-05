@@ -66,3 +66,19 @@ div.loader img
 {
     transform: translateY(10px) ;
 }
+@media only screen and (max-width: 600px) {
+    aside {
+        width: 50px;
+        height: 50px;
+        border: 4px;
+    }
+    aside img , .aside-icons {
+        display: none;
+    }
+    div.aside-links{
+        background-color: #000;
+        height: 100vb;
+        top: 0;
+        bottom: 0;
+    }
+}
